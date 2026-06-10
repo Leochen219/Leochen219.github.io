@@ -1,304 +1,302 @@
- 
-/* 基础样式 */
-* {
+/* ==========================================================================
+   Academic Homepage — Minimalist stylesheet
+   ========================================================================== */
+
+/* --- Reset & Base -------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
+html {
+    font-size: 17px;
+    -webkit-text-size-adjust: 100%;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    color: #222;
+    background: #fff;
 }
+
+/* --- Wrapper ------------------------------------------------------------- */
+
+.wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 24px 40px;
+}
+
+/* --- Links --------------------------------------------------------------- */
+
+a {
+    color: #1a56db;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    color: #1040a0;
+}
+
+a:visited {
+    color: #1a56db;
+}
+
+/* --- Horizontal rule ----------------------------------------------------- */
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 36px 0;
+}
+
+/* --- Header -------------------------------------------------------------- */
+
+.site-header {
+    margin-bottom: 20px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.header-photo {
+    flex-shrink: 0;
+}
+
+.header-photo img {
+    width: 135px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.chinese-name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.title-line {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.affiliation {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Contact links ------------------------------------------------------- */
+
+.contact-links {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #444;
+}
+
+.contact-links a:hover {
+    color: #1a56db;
+    text-decoration: underline;
+}
+
+.contact-links a i {
+    margin-right: 3px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.contact-links .divider {
+    color: #ccc;
+    margin: 0 4px;
+    user-select: none;
+}
+
+/* --- Sections ------------------------------------------------------------ */
 
 section {
-    padding: 80px 0;
+    margin-bottom: 42px;
 }
 
-h1,
-h2,
-h3 {
-    margin-bottom: 20px;
+section h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+section h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
 }
 
-.btn:hover {
-    background: #0056b3;
-    transform: translateY(-3px);
-}
-
-.bg-light {
-    background-color: #f8f9fa;
-}
-
-/* 导航栏 */
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-#navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-#navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
+section p {
+    margin-bottom: 12px;
     color: #333;
 }
 
-#navbar ul {
-    display: flex;
+/* --- News list ----------------------------------------------------------- */
+
+.news-list {
     list-style: none;
+    padding: 0;
 }
 
-#navbar ul li a {
-    text-decoration: none;
+.news-list li {
+    margin-bottom: 10px;
     color: #333;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
+    line-height: 1.55;
 }
 
-#navbar ul li a:hover {
-    color: #007bff;
+.news-date {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
 }
 
-/* 头部简介 */
-#hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
+/* --- Publications -------------------------------------------------------- */
+
+.pub-entry {
+    margin-bottom: 26px;
 }
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+.pub-entry:last-child {
+    margin-bottom: 0;
 }
 
-.hero-content h1 span {
-    color: #007bff;
+.pub-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 2px;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+.pub-authors {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 2px;
 }
 
-/* 关于我 */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+.pub-venue {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 2px;
 }
 
-.about-content img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.pub-links {
+    font-size: 0.9rem;
+    margin-top: 2px;
 }
 
-.about-text h3 {
-    font-size: 2rem;
-    color: #007bff;
+.pub-links a {
+    margin-right: 12px;
+    font-weight: 500;
 }
 
-.about-text p {
-    margin-bottom: 20px;
+/* --- Education ----------------------------------------------------------- */
+
+.edu-list {
+    list-style: none;
+    padding: 0;
 }
 
-.info p {
-    margin: 10px 0;
+.edu-list li {
+    margin-bottom: 16px;
 }
 
-/* 技能 */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+.edu-degree {
+    font-size: 0.98rem;
+    color: #222;
 }
 
-.skill {
-    text-align: center;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+.edu-school {
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.skill:hover {
-    transform: translateY(-10px);
+.edu-date {
+    font-size: 0.85rem;
+    color: #777;
 }
 
-.skill i {
-    font-size: 3rem;
-    color: #007bff;
-    margin-bottom: 20px;
+/* --- Proficiency --------------------------------------------------------- */
+
+.proficiency-list {
+    list-style: none;
+    padding: 0;
 }
 
-.skill-bar {
-    height: 10px;
-    background: #e9ecef;
-    border-radius: 5px;
-    margin-top: 15px;
+.proficiency-list li {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95rem;
 }
 
-.skill-level {
-    height: 100%;
-    background: #007bff;
-    border-radius: 5px;
+.prof-category {
+    font-weight: 600;
+    color: #444;
 }
 
-/* 项目展示 */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+/* --- Footer -------------------------------------------------------------- */
+
+footer {
+    font-size: 0.8rem;
+    color: #999;
 }
 
-.project-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
+/* --- Responsive ---------------------------------------------------------- */
 
-.project-card:hover {
-    transform: translateY(-10px);
-}
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 32px 18px 28px;
+    }
 
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-info {
-    padding: 20px;
-}
-
-.project-info h3 {
-    font-size: 1.5rem;
-}
-
-.project-info p {
-    margin: 15px 0;
-    color: #6c757d;
-}
-
-.project-links {
-    display: flex;
-    gap: 10px;
-}
-.hidden {
-    display: none;
-}
-/* 联系方式 */
-.contact-content {
-    display: flex;
-    gap: 50px;
-}
-
-.contact-info {
-    flex: 1;
-}
-
-.contact-info p {
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.social-links a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: #007bff;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    transform: translateY(-5px);
-    background: #0056b3;
-}
-
-.contact-form {
-    flex: 1;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form textarea {
-    height: 150px;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-
-    .about-content,
-    .contact-content {
+    .header-inner {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
-    .about-content img {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+    .header-photo img {
+        width: 105px;
+        height: 97px;
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .header-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .contact-links {
+        gap: 2px;
+        font-size: 0.88rem;
     }
 }

@@ -3,195 +3,208 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">4
-    <title>CHEN Hongyu - Personal Website</title>
-    <meta name="description" content="CHEN Hongyu (陈泓宇) person webpage at HKUST">
-    <meta name="keywords" content="CHEN Hongyu, 陈泓宇, personal webpage, 简历">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEN Hongyu — Academic Homepage</title>
+    <meta name="description" content="CHEN Hongyu (陈泓宇) — personal academic homepage at HKUST">
+    <meta name="keywords" content="CHEN Hongyu, 陈泓宇, HKUST, computer science, mathematics, academic homepage">
+
     <meta property="og:site_name" content="CHEN Hongyu">
-    <meta property="og:title" content="CHEN Hongyu - Personal Website">
+    <meta property="og:title" content="CHEN Hongyu — Academic Homepage">
     <meta property="og:url" content="https://leochen219.github.io/">
     <meta property="og:type" content="website">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "CHEN Hongyu（陈泓宇）",
-      "alternateName": "CHEN Hongyu - Personal Website",
-      "url": "https://leochen219.github.io/"
+      "@type": "Person",
+      "name": "CHEN Hongyu (陈泓宇)",
+      "url": "https://leochen219.github.io/",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "The Hong Kong University of Science and Technology"
+      }
     }
     </script>
     <link rel="canonical" href="https://leochen219.github.io/" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <div class="container">
-            <a href="#" class="logo">CHEN Hongyu</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello, I'm <span>CHEN Hongyu</span></h1>
-                <p>Computer Science & Mathematics Student @ HKUST</p>
-                <a href="#projects" class="btn">View My Work</a>
-            </div>
-        </div>
-    </header>
+    <div class="wrapper">
 
-    <!-- About Me -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="images/chen-hongyu.jpg" alt="CHEN Hongyu">
-                <div class="about-text">
-                    <h3>Who Am I?</h3>
-                    <p>I am currently pursuing a dual BSc degree in Mathematics and Computer Science at The Hong Kong
-                        University of Science
-                        and Technology (HKUST), expected to graduate in June 2027. I have consistently achieved academic
-                        excellence,
-                        including multiple Dean's List honors and top grades in courses such as Linear Algebra,
-                        Probability, and AI.</p>
-                    <p>Beyond academics, I actively mentor peers through HKUST’s SSCI MAGET and MSSSUG programs,
-                        supporting over 50 mainland
-                        freshmen and building a strong community. I also contribute to university outreach events and
-                        research projects,
-                        including work on large language models and AI-driven spam detection.</p>
-                    <div class="info">
-                        <p><strong>Name:</strong> CHEN Hongyu</p>
-                        <p><strong>Email:</strong> hongyuc219@gmail.com / hchendu@connect.ust.hk</p>
-                        <p><strong>Location:</strong> Hong Kong</p>
-                    </div>
+        <!-- ============================================================ -->
+        <!-- HEADER: photo + name / title / affiliation                    -->
+        <!-- ============================================================ -->
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="header-photo">
+                    <img src="images/chen-hongyu.jpg" alt="CHEN Hongyu">
+                </div>
+                <div class="header-text">
+                    <h1>CHEN Hongyu <span class="chinese-name">(陈泓宇)</span></h1>
+                    <p class="title-line">BSc in Mathematics &amp; Computer Science</p>
+                    <p class="affiliation">
+                        <span class="affiliation-placeholder">
+                            <!-- University logo space: e.g. HKUST or UT -->
+                            The Hong Kong University of Science and Technology
+                        </span>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>C++ / Java</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-python"></i>
-                    <h3>Python & Data Processing</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-brain"></i>
-                    <h3>AI & Machine Learning</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML / CSS</h3>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
+        <!-- ============================================================ -->
+        <!-- CONTACT LINKS                                                -->
+        <!-- ============================================================ -->
+        <div class="contact-links">
+            <a href="mailto:hongyuc219@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <span class="divider">/</span>
+            <a href="https://github.com/hongyu219" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Multimodal Sensing App" class="hidden">
-                    <div class="project-info">
-                        <h3>UROP: LLM-Assisted Multimodal Sensing on Mobile Devices</h3>
-                        <p>Developed a mobile app using Java to collect sensor data and assisted backend processing for
-                            multimodal analysis.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/HKUST-MINSys-Lab/MobiQA" class="btn" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
-                            <a href="#" class="btn">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="LLM Research" class="hidden">
-                    <div class="project-info">
-                        <h3>UROP: Theory of Mind in Large Language Models</h3>
-                        <p>Contributed to AI research using PyTorch and TensorFlow, focusing on cognitive modeling in
-                            LLMs.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Spam Detection" class="hidden">
-                    <div class="project-info">
-                        <h3>AI Spam Email Cleaner</h3>
-                        <p>Built deep learning models with Keras and Scikit-learn to classify and clean spam emails.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/hongyu219/spam-cleaner-ai" class="btn" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
-                            <a href="#" class="btn">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <hr>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> hongyuc219@gmail.com</p>
-                    <div class="social-links">
-                        <a href="https://github.com/hongyu219" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message..." required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        <!-- ============================================================ -->
+        <!-- MAIN CONTENT                                                 -->
+        <!-- ============================================================ -->
+        <main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 CHEN Hongyu. All rights reserved.</p>
-        </div>
-    </footer>
+            <!-- About -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    I am an undergraduate student at The Hong Kong University of Science and Technology (HKUST),
+                    pursuing a dual BSc degree in Mathematics and Computer Science. My research interests lie at
+                    the intersection of machine learning, world modeling, and video generation.
+                    I am currently a research assistant in the World Lab at HKUST, where I am supervised by
+                    <a href="https://fnzhan.com/" target="_blank">Prof. Zhan Fangneng</a>.
+                    Previously, I was supervised by
+                    <a href="https://xmouyang.github.io/" target="_blank">Prof. Ouyang Xiaomin</a>.
+                </p>
+            </section>
+
+            <!-- News -->
+            <section id="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="news-date">June 2026</span>
+                        — Received Dean's List honors for academic excellence in Spring 2026.
+                    </li>
+                    <li>
+                        <span class="news-date">March 2026</span>
+                        — Glad to work on research project on video generation with Prof. Zhan.
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- Publications -->
+            <section id="publications">
+                <h2>Publications</h2>
+                <p><em>Still working on it...</em></p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="pub-entry">
+                    <div class="pub-title">Zero-Shot Vision-Language Feature Alignment via Contrastive Learning</div>
+                    <div class="pub-authors">
+                        <strong>Hongyu Chen</strong>, Dong Yunao, Liu XiYue
+                    </div>
+                    <div class="pub-venue">
+                        <em>COMP4471 Course Project</em>,April 2026
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://github.com/Leochen219/COMP4471_Project">[Code]</a>
+                    </div>
+                    <p>This project implements a CLIP-style dual-encoder model that aligns images and text in a shared
+                        embedding space via contrastive learning. The model is trained on the COCO Captions dataset and
+                        can perform zero-shot image-text retrieval and zero-shot classification on unseen datasets like
+                        ImageNet and CIFAR-100.</p>
+                </div>
+
+                <div class="pub-entry">
+                    <div class="pub-title">Project Road Segmentation </div>
+                    <div class="pub-authors">
+                        <strong>Hongyu Chen</strong>, LYU Changlai
+                    </div>
+                    <div class="pub-venue">
+                        <em>EPFL AI Competition</em>, Jan 2026
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://github.com/CS-433/project-2-ml__2/tree/main">[Code]</a>
+                    </div>
+                    <p>We work with the official dataset from the AICrowd EPFL ML Road Segmentation challenge and
+                        develop a deep learning model for road segmentation.</p>
+                </div>
+
+                <div class="pub-entry">
+                    <div class="pub-title">LLM-Assisted Multimodal Sensing on Mobile Devices</div>
+                    <div class="pub-authors">
+                        <strong>Hongyu Chen</strong>
+                    </div>
+                    <div class="pub-venue">
+                        <em>UROP</em>, 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://github.com/HKUST-MINSys-Lab/MobiQA">[Code]</a>
+                    </div>
+                    <p>Developed a mobile app using Java to collect sensor data and assisted backend processing for
+                        multimodal analysis.</p>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education">
+                <h2>Education</h2>
+                <ul class="edu-list">
+                    <li>
+                        <div class="edu-degree"><strong>BSc in Computer Science &amp; Mathematics</strong></div>
+                        <div class="edu-school">The Hong Kong University of Science and Technology (HKUST)</div>
+                        <div class="edu-date">2023 — 2027 (expected)</div>
+                        <div class="grade">GPA: 3.95/4.3</div>
+                        <div class="awards">Dean's List (All Terms), Continuing Scholarship </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Proficiency / Skills -->
+            <section id="proficiency">
+                <h2>Proficiency</h2>
+                <ul class="proficiency-list">
+                    <li>
+                        <span class="prof-category">Languages:</span>
+                        Mandarin (native), English (IELTS 6.5), Cantonese (basic)
+                    </li>
+                    <li>
+                        <span class="prof-category">Programming:</span>
+                        Python, C++, Java, HTML / CSS, JavaScript
+                    </li>
+                    <li>
+                        <span class="prof-category">Tools &amp; Frameworks:</span>
+                        PyTorch, TensorFlow, Git, LaTeX
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+
+        <hr>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER                                                       -->
+        <!-- ============================================================ -->
+        <footer>
+            <p>&copy; 2025 CHEN Hongyu. Last updated: June 2025.</p>
+        </footer>
+
+    </div>
 
     <script src="js/script.js"></script>
 </body>
 
 </html>
-
-
