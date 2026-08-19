@@ -222,6 +222,44 @@ section p {
     font-weight: 500;
 }
 
+/* --- Writing ------------------------------------------------------------- */
+
+.writing-entry {
+    border-left: 3px solid #1a56db;
+    padding-left: 18px;
+}
+
+.writing-entry h3 {
+    line-height: 1.45;
+    margin-bottom: 7px;
+}
+
+.writing-entry h3 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.writing-entry h3 a:hover {
+    color: #1a56db;
+    text-decoration: underline;
+}
+
+.writing-date {
+    color: #777;
+    font-size: 0.84rem;
+    margin-bottom: 4px;
+}
+
+.writing-read {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.writing-read::after {
+    content: " \2192";
+}
+
 /* --- Education ----------------------------------------------------------- */
 
 .edu-list {
