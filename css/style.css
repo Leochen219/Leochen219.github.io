@@ -48,6 +48,12 @@ a:visited {
     color: #1a56db;
 }
 
+a:focus-visible {
+    outline: 2px solid #1a56db;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 /* --- Horizontal rule ----------------------------------------------------- */
 
 hr {
@@ -186,7 +192,7 @@ section p {
 /* --- Publications -------------------------------------------------------- */
 
 .pub-entry {
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 
 .pub-entry:last-child {
@@ -220,6 +226,19 @@ section p {
 .pub-links a {
     margin-right: 12px;
     font-weight: 500;
+}
+
+.status-label {
+    display: inline-block;
+    margin: 3px 0 8px;
+    padding: 2px 8px;
+    border: 1px solid #c8d5ee;
+    border-radius: 999px;
+    color: #34558e;
+    background: #f5f8fd;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
 }
 
 /* --- Writing ------------------------------------------------------------- */
@@ -336,5 +355,17 @@ footer {
     .contact-links {
         gap: 2px;
         font-size: 0.88rem;
+    }
+
+    section {
+        margin-bottom: 34px;
+    }
+
+    .pub-title {
+        line-height: 1.45;
+    }
+
+    .status-label {
+        white-space: normal;
     }
 }
