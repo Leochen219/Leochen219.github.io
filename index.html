@@ -56,14 +56,20 @@
             <section id="research">
                 <h2>Research</h2>
                 <div class="pub-entry">
+                    <div class="pub-title">Numerical Stability and Error Propagation in World-Model Rollouts</div>
+                    <div class="status-label">MATH4999 Capstone · Ongoing Research</div>
+                    <p>I investigate how numerical precision and autoregressive feedback affect prediction error in Cosmos world-model rollouts, using finite-difference precision controls and paired teacher-forced/autoregressive comparisons with matched motion conditions and sampling noise. Across six Bridge trajectories with two seed sequences each, feedback increased mean endpoint RGB error on three trajectories and reduced it on three. A separate five-chunk pilot on one trajectory found non-monotonic RGB error; exact error decomposition showed how a negative cross-term can offset feedback-induced changes. RGB and re-encoded latent errors can differ in their ordering. These findings are limited to the tested trajectories and settings: the Bridge conditions include future observed poses, and the five-chunk study uses only one trajectory and two seed sequences. They do not establish general or long-term stability.</p>
+                    <div class="pub-links"><a href="https://github.com/Leochen219/Math4999" target="_blank" rel="noopener noreferrer">[Code]</a> <a href="https://github.com/Leochen219/Math4999/blob/74f4d3b3efdbe90397f271ce9740c9e506480de6/cosmos_umi_capstone/reports/task10_real_scenes_2026-09-25.md" target="_blank" rel="noopener noreferrer">[Six-Trajectory Report]</a></div>
+                </div>
+                <div class="pub-entry">
                     <div class="pub-title">Navigation World Models</div>
                     <div class="status-label">Ongoing Research</div>
-                    <p>Experiments evaluating a navigation world model found policy-like behavior favoring familiar navigation patterns over alternative actions. I developed an Isaac Sim data pipeline integrating NavDP, A* planning, and perturbation-based trajectory collection to support targeted fine-tuning. The research question concerns trajectory coverage, training distributions, and action-conditioned simulation fidelity.</p>
+                    <p>Preliminary evaluations of a navigation world model suggested a preference for familiar navigation patterns over alternative actions. I developed an Isaac Sim data pipeline integrating NavDP, A* planning, and perturbation-based trajectory collection. Targeted fine-tuning is a next step for studying trajectory coverage, training distributions, and action-conditioned simulation fidelity.</p>
                 </div>
                 <div class="pub-entry">
                     <div class="pub-title">VLM Post-Training</div>
-                    <div class="status-label">Ongoing Research</div>
-                    <p>Exploring reinforcement learning and on-policy self-distillation for vision-language models, with a focus on multimodal reasoning and generalization. I study how post-training objectives and data shape behavior and how models use visual evidence.</p>
+                    <div class="status-label">Ongoing Research · Exploratory Stage</div>
+                    <p>I am exploring reinforcement learning and on-policy self-distillation for vision-language models, with a focus on multimodal reasoning and generalization. The planned experiments examine how post-training objectives and data affect models' use of visual evidence.</p>
                 </div>
             </section>
 
@@ -123,7 +129,7 @@
 
         <hr>
         <footer>
-            <p>&copy; 2026 CHEN Hongyu. Last updated: September 2026.</p>
+            <p>&copy; 2026 CHEN Hongyu. Last updated: October 2026.</p>
         </footer>
     </div>
     <script src="js/script.js"></script>
